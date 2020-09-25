@@ -8,7 +8,7 @@
 
 Privacy is the driving force behind this project. It uses secure technologies like [WebRTC](https://webrtc-security.github.io/) to directly connect between participants. The website that provides the web app and mediates the communication stores as few data as possible and does not know anything about the contents of established conversations. No accounts are required. No cookies are used.
 
-The difference between Briefing and most similar projects is, that it does not use a central server that distributes the video streams ([SFU](https://webrtcglossary.com/sfu/)). The advantage of an SFU is that it saves bandwidth due to the fact that the own video does not being uploaded to each participant but only once. The SFU can also do more optimizations the clients might not support. But then the video signal is not end-to-end encrypted any more i.e. you have to trust the SFU provider. Briefing instead sends data from peer to peer directly ("Mesh") and is therefore end-to-end encrypted by default by WebRTC implementations.
+The difference between Briefing and most similar projects is, that it does not use a central server that distributes the video streams ([SFU](https://webrtcglossary.com/sfu/)). The advantage of an SFU is that it saves bandwidth due to the fact that the own video does not being uploaded to each participant but only once. The SFU can also do more optimizations the clients might not support. But then the video signal is not end-to-end encrypted any more i.e. you have to trust the SFU provider. Briefing instead sends data from peer to peer directly ("Mesh") and therefore the data does not travel over the server under normal operation. The WebRTC peers however still trust the signaling server for the authenticity of the peer-to-peer communications encryption in place.
 
 **FAQ- Some answers to some questions**
 
@@ -18,7 +18,7 @@ During the Corona pandemic I tried to create a peer-to-peer solution for home sc
 
 *Why is it free and Open Source?*
 
-Only a free project does not require the user to create an account and unveil payment information, that could be used to identify that person. This is why the project is free and will remain free, as long as no additional costs like maintaining TURN servers etc. will require some funding. If you want to support me and the project directly you can [via PayPal](https://www.paypal.me/apperdeck). If you are interested in sponsoring please contact me at briefing@holtwick.de.
+Only a free project does not require the user to create an account and unveil payment information, that could be used to identify that person. This is why the project is free and will remain free, as long as no additional costs like maintaining TURN servers etc. will require some funding. If you want to support me and the project directly you can [via Github](https://github.com/sponsors/holtwick) or [via PayPal](https://www.paypal.me/apperdeck). If you are interested in sponsoring please contact me at briefing@holtwick.de.
 
 *Which servers are actually involved in a call?*
 
@@ -34,3 +34,18 @@ Please visit the [GitHub project](https://github.com/holtwick/briefing/issues) t
 
 Frankly this is not required, because your browser can handle it all. You can of course put Briefing on your home screen e.g. in iOS Safari tap on the "Share" icon and choose "Add to Home Screen". You can do the same in browsers like Google Chrome.
 
+**License**
+
+Briefing is free and can be modified and forked. But the conditions of the EUPL (European Union Public License 1.2) need to be respected, which are similar to ones of the GPL. In particular modifications need to be free as well and made available to the public.
+
+For commercial use please contact [license@holtwick.de](mailto:license@holtwick.de) for licensing alternatives.  
+
+Get a quick overview of the license at [Choose an open source license](https://choosealicense.com/licenses/eupl-1.2/). This license is available in the [languages of the European Community](https://eupl.eu/).
+
+*Author*
+
+My name is Dirk Holtwick. I'm an independent software developer located in Germany. Learn more at [hotlwick.de](https://holtwick.de/de/about).
+
+---
+
+Fund this project by [sponsoring via GitHub](https://github.com/sponsors/holtwick). 
